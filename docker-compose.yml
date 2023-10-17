@@ -9,7 +9,7 @@ services:
     #   - "6374:6379"
   proxypool:
     image: "germey/proxypool:master"
-    container_name: python3webspider_proxypool
+    container_name: p3wsd_proxypool
     cpus: 0.1
     mem_limit: 512m
     ports:
