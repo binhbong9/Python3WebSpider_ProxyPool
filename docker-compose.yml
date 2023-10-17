@@ -3,11 +3,15 @@ services:
   redis4proxypool:
     image: redis:alpine
     container_name: redis4proxypool
+    cpus: 0.1
+    mem_limit: 512m
     # ports:
     #   - "6374:6379"
   proxypool:
     image: "germey/proxypool:master"
-    container_name: proxypool
+    container_name: python3webspider_proxypool
+    cpus: 0.1
+    mem_limit: 512m
     ports:
       - "5555:5555"
     restart: always
